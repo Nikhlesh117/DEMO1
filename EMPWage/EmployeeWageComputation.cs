@@ -20,7 +20,6 @@ namespace EMPWage
             int totalEmpWage = 0;
             int totalWorkingDays = 0;
             int totalEmpHrs = 0;
-
             while (totalWorkingDays < NO_OF_WORKING_DAYS && totalEmpHrs < MAX_HRS_IN_MONTH)
             {
                 totalWorkingDays++;
@@ -39,7 +38,6 @@ namespace EMPWage
                         empHrs = 0;
                         break;
                 }
-
                 totalEmpHrs += empHrs;
                 empWage = totalEmpHrs * EMP_RATE_PER_HOUR;
                 totalEmpWage += empWage;
